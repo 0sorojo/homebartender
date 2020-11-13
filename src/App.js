@@ -1,8 +1,32 @@
+import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+
+import Home from './pages/Home';
+import About from './pages/About';
+import SingleDrink from './pages/SingleDrink';
+import Error from './pages/Error';
+
+import Navbar from './components/Navbar';
+
 const App = () => {
   return (
-    <>
-      <h1>I work</h1>
-    </>
+    <Router>
+      <Navbar />
+      <Switch>
+        <Route exact path='/'>
+          <Home />
+        </Route>
+        <Route path='/about'>
+          <About />
+        </Route>
+        <Route path='/drink/:id'>
+          <SingleDrink />
+        </Route>
+        <Route path='/error'>
+          <Error />
+        </Route>
+      </Switch>
+    </Router>
   );
 };
 
