@@ -7,7 +7,7 @@ Variables
   --primaryLightColor: #eee0cb;
   --primaryColor: #baa898;
   --primaryDarkColor: #000;
-  --mainWhite: #fff;
+  --mainWhite: #839788;
   --offWhite: #f7f7f7;
   --mainBackground: #bfd7ea;
   --mainOverlay: rgba(35, 10, 36, 0.4);
@@ -104,13 +104,13 @@ Buttons
   color: var(--primaryColor);
 }
 .btn-primary {
-  background: var(--primaryColor);
-  color: var(--mainWhite);
+  background: var(--mainWhite);
+  color: var(--primaryLightColor);
   border-color: transparent;
 }
 .btn-primary:hover {
   background: var(--primaryLightColor);
-  color: var(--primaryColor);
+  color: var(--mainWhite);
 }
 .btn-block {
   width: 100%;
@@ -120,10 +120,13 @@ Buttons
   text-align: center;
 }
 .btn-details {
+  background: var(--primaryColor);
+  color: var(--primaryLightColor);
   padding: 0.25rem 0.4rem;
 }
 .btn-details:hover {
   background: var(--primaryLightColor);
+  color: var(--primaryColor);
   border-color: var(--primaryLightColor);
 }
 /* 
@@ -136,7 +139,7 @@ Navbar
   height: 5rem;
   display: flex;
   align-items: center;
-  border-bottom: 2px solid var(--primaryColor);
+  border-bottom: 2px solid var(--primaryLightColor);
   box-shadow: var(--lightShadow);
 }
 .nav-center {
@@ -163,7 +166,7 @@ Navbar
   transition: var(--mainTransition);
 }
 .nav-links a:hover {
-  color: var(--primaryColor);
+  color: var(--primaryLightColor);
 }
 .logo {
   width: 12rem;
@@ -235,6 +238,7 @@ Cocktail
 
 .cocktail {
   background: var(--mainWhite);
+  border: var(--primaryColor) 2px solid;
   margin-bottom: 2rem;
   box-shadow: var(--lightShadow);
   transition: var(--mainTransition);
@@ -263,7 +267,7 @@ Cocktail
   font-size: 2rem;
 }
 .cocktail-footer p {
-  color: var(--darkGrey);
+  color: var(--primaryDarkColor);
   margin-bottom: 0.5rem;
 }
 /* 
