@@ -120,13 +120,13 @@ Buttons
   text-align: center;
 }
 .btn-details {
-  background: var(--primaryColor);
-  color: var(--primaryLightColor);
+  background: var(--primaryLightColor);
+  color: var(--mainWhite);
   padding: 0.25rem 0.4rem;
 }
 .btn-details:hover {
-  background: var(--primaryLightColor);
-  color: var(--primaryColor);
+  background: var(--primaryColor);
+  color: var(--primaryLightColor);
   border-color: var(--primaryLightColor);
 }
 /* 
@@ -134,6 +134,7 @@ Buttons
 Navbar
 ======
 */
+
 .navbar {
   background: var(--mainWhite);
   height: 5rem;
@@ -238,7 +239,7 @@ Cocktail
 
 .cocktail {
   background: var(--mainWhite);
-  border: var(--primaryColor) 2px solid;
+  border: var(--primaryLightColor) 2px solid;
   margin-bottom: 2rem;
   box-shadow: var(--lightShadow);
   transition: var(--mainTransition);
@@ -284,7 +285,7 @@ Form
   width: var(--smallWidth);
   margin: 0 auto;
   max-width: var(--maxWidth);
-  background: var(--mainWhite);
+  background: var(--primaryLightColor);
   padding: 2rem 2.5rem;
   text-transform: capitalize;
   border-radius: var(--mainBorderRadius);
@@ -296,7 +297,8 @@ Form
   margin-bottom: 1.25rem;
   font-weight: bold;
   letter-spacing: 0.25rem;
-  color: var(--primaryColor);
+  text-align: center;
+  color: var(--primaryDarkColor);
 }
 .form-control input {
   width: 100%;
@@ -328,19 +330,28 @@ Cocktail
 .drink p {
   font-weight: bold;
   text-transform: capitalize;
-  line-height: 1.8;
+  line-height: 1.5;
+  padding: 0.15rem 0.5rem;
 }
 .drink span {
   margin-right: 0.5rem;
 }
 .drink-data {
-  background: var(--primaryLightColor);
-  padding: 0.25rem 0.5rem;
+  background: transparent;
+  padding: 0.05rem 0.5rem;
   border-radius: var(--mainBorderRadius);
-  color: var(--primaryColor);
+  color: var(--primaryDarkColor);
+  border: var(--primaryColor) 1px solid;
 }
 .drink-info {
-  padding-top: 2rem;
+  padding-top: 1rem;
+  background: var(--primaryLightColor);
+  border: var(--primaryColor) solid 2px;
+}
+
+.ingr-section {
+  display: flex;
+  justify-content: space-between;
 }
 @media screen and (min-width: 992px) {
   .drink {
